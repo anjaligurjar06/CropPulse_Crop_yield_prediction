@@ -1,0 +1,53 @@
+/* ── Step indicator bar ── */
+.cp-steps {
+  display: flex;
+  background: #fff;
+  border: 1px solid #e8ead8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cp-step {
+  flex: 1;
+  padding: 12px 8px;
+  text-align: center;
+  border-right: 1px solid #e8ead8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.2s;
+}
+
+.cp-step:last-child { border-right: none; }
+
+.cp-step.active { background: #eaf3de; }
+
+/* ── Step number bubble ── */
+.cp-step-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #eff0e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: #888;
+  transition: background 0.2s, color 0.2s;
+}
+
+.cp-step.active .cp-step-num {
+  background: #2d5a1b;
+  color: #fff;
+}
+
+/* ── Step label ── */
+.cp-step-label {
+  font-size: 11px;
+  color: #999;
+  font-weight: 500;
+}
+
+.cp-step.active .cp-step-label { color: #27500a; }

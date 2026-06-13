@@ -1,0 +1,137 @@
+/* ── Result card wrapper ── */
+.cp-result {
+  background: #fff;
+  border: 1px solid #e8ead8;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* ── Result hero banner ── */
+.cp-result-hero {
+  padding: 24px 22px 20px;
+  position: relative;
+  background-color: #152b18;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.cp-result-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 35, 10, 0.72);
+}
+
+.cp-result-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* ── Yield number ── */
+.cp-result-label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 6px;
+  letter-spacing: 0.03em;
+}
+
+.cp-result-yield {
+  font-size: 42px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.cp-result-unit {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-top: 6px;
+}
+
+/* ── Outlook badge ── */
+.cp-result-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.badge-good { background: #dff0d0; color: #1e4a08; }
+.badge-avg  { background: #fde9c8; color: #6b3a06; }
+.badge-poor { background: #fad8d8; color: #7a1a1a; }
+
+/* ── Metric tiles grid ── */
+.cp-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  padding: 18px;
+}
+
+.cp-metric {
+  background: #f8f9f4;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.cp-metric-val {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.cp-metric-lbl {
+  font-size: 11px;
+  color: #888;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* ── Progress bar ── */
+.cp-progress-track {
+  height: 4px;
+  background: #e8ead8;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.cp-progress-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.6s ease;
+}
+
+/* ── Tip box ── */
+.cp-tip {
+  margin: 0 18px 16px;
+  padding: 12px 14px;
+  background: #eaf3de;
+  border-radius: 10px;
+  font-size: 13px;
+  color: #27500a;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.55;
+}
+
+/* ── Disclaimer ── */
+.cp-disclaimer {
+  font-size: 11px;
+  color: #aaa;
+  text-align: center;
+  padding: 0 18px 16px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  .cp-result-yield { font-size: 32px; }
+  .cp-metrics { grid-template-columns: repeat(2, 1fr); }
+}

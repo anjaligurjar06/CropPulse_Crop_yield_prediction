@@ -1,0 +1,125 @@
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Base ── */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f5f6f0;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* ── App wrapper ── */
+.cp-app {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── Shared form grid layouts ── */
+.cp-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.cp-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 16px;
+}
+
+/* ── Shared field elements ── */
+.cp-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cp-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 0.02em;
+}
+
+.cp-hint {
+  font-size: 11px;
+  color: #aaa;
+}
+
+.cp-input,
+.cp-select {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #dde0d0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #1a1a1a;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  font-family: inherit;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.cp-select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
+}
+
+.cp-input:focus,
+.cp-select:focus {
+  border-color: #639922;
+  box-shadow: 0 0 0 3px rgba(99, 153, 34, 0.12);
+}
+
+/* ── Submit button ── */
+.cp-submit {
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  background: #2d5a1b;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.15s, transform 0.1s;
+  letter-spacing: 0.01em;
+  font-family: inherit;
+}
+
+.cp-submit:hover  { background: #3b6d11; }
+.cp-submit:active { transform: scale(0.99); }
+
+.cp-submit-icon { font-size: 18px; }
+
+/* ── Error message ── */
+.cp-error {
+  color: #a32d2d;
+  background: #fcebeb;
+  border: 1px solid #f0a0a0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  .cp-app { padding: 16px 12px 48px; }
+}

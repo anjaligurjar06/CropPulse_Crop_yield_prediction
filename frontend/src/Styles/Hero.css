@@ -1,0 +1,108 @@
+/* ── Hero banner ── */
+.cp-hero {
+  background: #152b18;
+  border-radius: 16px;
+  padding: 36px 28px 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cp-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  border-radius: 16px;
+}
+
+.cp-hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Logo row ── */
+.cp-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.cp-logo-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #2d5a1b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cp-logo-text {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -0.4px;
+}
+
+.cp-logo-dot { color: #97c459; }
+
+.cp-tagline {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.04em;
+  margin-top: 2px;
+}
+
+/* ── Hero copy ── */
+.cp-hero-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.25;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+.cp-hero-sub {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.65;
+  max-width: 520px;
+}
+
+/* ── Stat pills ── */
+.cp-stat-pills {
+  display: flex;
+  gap: 10px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+
+.cp-pill {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cp-pill-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #97c459;
+  flex-shrink: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  .cp-hero { padding: 26px 18px 22px; }
+  .cp-hero-title { font-size: 22px; }
+}

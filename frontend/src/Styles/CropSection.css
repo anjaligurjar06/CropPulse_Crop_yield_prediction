@@ -1,0 +1,54 @@
+/* ── Crop picker field label ── */
+.cp-field-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── Crop picker grid ── */
+.cp-crop-picker {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(78px, 1fr));
+  gap: 8px;
+}
+
+/* ── Individual crop button ── */
+.cp-crop-btn {
+  border: 1px solid #e8ead8;
+  border-radius: 10px;
+  padding: 10px 6px;
+  cursor: pointer;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: #666;
+  font-weight: 500;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+  font-family: inherit;
+}
+
+.cp-crop-btn:hover {
+  background: #f5f9f0;
+  border-color: #c5d9a0;
+}
+
+.cp-crop-btn.selected {
+  background: #eaf3de;
+  border-color: #639922;
+  color: #27500a;
+}
+
+.cp-crop-emoji { font-size: 22px; }
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  .cp-crop-picker {
+    grid-template-columns: repeat(auto-fill, minmax(68px, 1fr));
+  }
+}

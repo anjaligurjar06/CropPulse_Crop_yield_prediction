@@ -1,0 +1,51 @@
+/* ── Shared section card ── */
+.cp-section {
+  background: #fff;
+  border: 1px solid #e8ead8;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* ── Section header ── */
+.cp-section-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #f0f1e8;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cp-section-header--green { background: #f4faf0; }
+.cp-section-header--blue  { background: #f0f6fe; }
+.cp-section-header--amber { background: #fef8f0; }
+
+/* ── Section icon ── */
+.cp-section-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cp-section-icon--green { background: #dff0d0; }
+.cp-section-icon--blue  { background: #d8ecfc; }
+.cp-section-icon--amber { background: #fde9c8; }
+
+/* ── Section text ── */
+.cp-section-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.cp-section-sub {
+  font-size: 12px;
+  color: #888;
+  margin-top: 2px;
+}
+
+/* ── Section body ── */
+.cp-section-body { padding: 20px; }
