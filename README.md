@@ -1,48 +1,88 @@
-# 🌾CropPulse: Crop Yield Prediction System
+# 🌾 CropPulse: AI-Powered Crop Yield Prediction System
 
-A Machine Learning-based Crop Yield Prediction System that predicts the expected crop yield using various environmental and agricultural factors such as rainfall, temperature, soil characteristics, humidity, and crop type. This project helps farmers, researchers, and agricultural organizations make data-driven decisions to improve productivity and resource management.
+CropPulse is a full-stack Machine Learning application that predicts agricultural crop yield using environmental and farming-related parameters such as rainfall, temperature, humidity, soil conditions, and crop type.
 
----
-
-##  Project Overview
-
-Crop yield prediction is a critical task in agriculture. Accurate yield estimation helps in planning storage, transportation, pricing, and resource allocation.
-
-This project utilizes Machine Learning algorithms to analyze historical agricultural data and predict crop yield based on multiple input parameters.
+The system combines a React frontend, FastAPI backend, and a trained Scikit-learn model to deliver real-time crop yield predictions along with factor-based insights that help farmers and agricultural planners make informed decisions.
 
 ---
 
 ##  Features
 
-- Predict crop yield using agricultural and environmental data
-- User-friendly web interface
-- Real-time prediction generation
-- Data preprocessing and feature engineering
-- Machine Learning model training and evaluation
-- Visualization of agricultural trends
-- Responsive frontend design
-- Easy deployment and scalability
+* Real-time crop yield prediction
+* Interactive and responsive React dashboard
+* Machine Learning-powered prediction engine
+* FastAPI REST API backend
+* Environmental factor impact analysis
+* Input validation and preprocessing
+* Scalable architecture for future agricultural datasets
+* Clean and modern UI
+
+---
+
+##  Project Architecture
+
+Frontend (React + Vite)
+⬇
+FastAPI Backend
+⬇
+Scikit-learn ML Model
+⬇
+Yield Prediction & Factor Analysis
 
 ---
 
 ##  Tech Stack
 
 ### Frontend
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap
+
+* React.js
+* JavaScript
+* CSS
 
 ### Backend
-- FastAPI
-- Flask
+
+* FastAPI
+* Uvicorn
+* Pydantic
 
 ### Machine Learning
-- Scikit-learn
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+
+* Scikit-learn
+* Pandas
+* NumPy
+
+---
+
+##  Installation
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+### Backend
+
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn app.main:app --reload --port 8001
+```
+
+---
+
+##  Future Improvements
+
+* Weather API integration
+* Region-specific recommendations
+* Crop recommendation system
+* Historical yield analytics
+* Model retraining pipeline
+* Cloud deployment
+
+---
 
 ### Database (Optional)
 - MySQL / SQLite
