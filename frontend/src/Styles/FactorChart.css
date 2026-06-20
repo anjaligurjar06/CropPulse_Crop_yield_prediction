@@ -1,0 +1,73 @@
+.cp-factor-card {
+  background: #fff;
+  border: 1px solid #e8ead8;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.cp-factor-header {
+  margin-bottom: 8px;
+}
+
+.cp-factor-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.cp-factor-sub {
+  font-size: 12px;
+  color: #888;
+  margin-top: 2px;
+}
+
+.cp-factor-chart-wrap {
+  margin: 8px 0 4px;
+}
+
+.cp-factor-tooltip {
+  background: #fff;
+  border: 1px solid #e8ead8;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.cp-factor-tooltip-name {
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 2px;
+}
+
+.cp-factor-tooltip-value {
+  color: #555;
+}
+
+.cp-factor-tooltip-tag {
+  margin-top: 4px;
+  font-size: 11px;
+  color: #639922;
+  font-weight: 600;
+}
+
+.cp-factor-callout {
+  margin-top: 16px;
+  padding: 12px 14px;
+  background: #fef8f0;
+  border-radius: 10px;
+  font-size: 13px;
+  color: #633806;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.55;
+}
+
+.cp-factor-callout strong {
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .cp-factor-card { padding: 16px; }
+}

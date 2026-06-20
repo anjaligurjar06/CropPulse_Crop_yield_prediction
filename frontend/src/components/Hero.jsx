@@ -1,4 +1,5 @@
 import "../styles/Hero.css";
+import sunflowers from "../assets/Sunflowers.jpeg";
 
 export default function Hero() {
   return (
@@ -6,8 +7,7 @@ export default function Hero() {
       <div
         className="cp-hero-bg"
         style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200&q=70&auto=format&fit=crop')",
+          backgroundImage: `url(${sunflowers})`
         }}
       />
       <div className="cp-hero-content">

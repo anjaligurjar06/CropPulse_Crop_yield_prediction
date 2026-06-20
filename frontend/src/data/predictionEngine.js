@@ -60,5 +60,12 @@ export function computePrediction(formData) {
     outlook,
     metrics: { waterAdequacy, tempSuitability, soilScore, inputEfficiency },
     tip: TIPS[outlook],
+    factors: {
+      rainfall: Math.round(rainScore * 100),
+      temperature: Math.round(tempScore * 100),
+      pesticide: Math.round(pb * 100),
+      humidity: Math.round(humScore * 100),
+    },
   };
 }
+
